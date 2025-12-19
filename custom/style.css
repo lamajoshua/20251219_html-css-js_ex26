@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+}
+
+/* 4枚の画像に変化する背景 */
+.bg-img {
+  background-image: url("images/img1.avif");
+  background-size: cover;
+  animation: change-image 15s infinite;
+  height: 100vh;
+}
+@keyframes change-image {
+  0%, 100% { background-image: url("images/img1.avif"); }
+  25% { background-image: url("images/img2.avif"); }
+  50% { background-image: url("images/img3.avif"); }
+  75% { background-image: url("images/img4.avif"); }
+}
